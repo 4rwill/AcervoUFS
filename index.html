@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +50,7 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 20px rgba(255,255,255,0.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
         }
 
         .screen {
@@ -58,11 +59,14 @@
             overflow-y: auto;
             padding: 24px 20px 90px;
         }
-        
-        .screen::-webkit-scrollbar, .h-scroll::-webkit-scrollbar {
+
+        .screen::-webkit-scrollbar,
+        .h-scroll::-webkit-scrollbar {
             display: none;
         }
-        .screen, .h-scroll {
+
+        .screen,
+        .h-scroll {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
@@ -73,8 +77,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(5px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .header {
@@ -146,7 +157,7 @@
             font-size: 18px;
             font-weight: 600;
         }
-        
+
         .see-all {
             font-size: 14px;
             color: var(--primary);
@@ -157,11 +168,13 @@
         .greeting-area {
             margin-bottom: 20px;
         }
+
         .greeting-area h1 {
             font-size: 28px;
             font-weight: 700;
             margin: 8px 0;
         }
+
         .greeting-area p {
             color: var(--text-sec);
             font-size: 14px;
@@ -179,10 +192,13 @@
             position: relative;
             overflow: hidden;
         }
+
         .card-continue::before {
             content: '';
             position: absolute;
-            left: 0; top: 0; bottom: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 4px;
             background-color: var(--primary);
         }
@@ -211,6 +227,7 @@
             font-weight: 600;
             margin-bottom: 4px;
         }
+
         .continue-info p {
             font-size: 12px;
             color: var(--text-sec);
@@ -225,25 +242,28 @@
         .progress-wrapper {
             flex: 1;
         }
+
         .progress-text {
             font-size: 12px;
             color: var(--primary);
             font-weight: 500;
             margin-bottom: 6px;
         }
+
         .progress-bar {
             height: 4px;
             background-color: var(--surface-light);
             border-radius: 2px;
             overflow: hidden;
         }
+
         .progress-fill {
             height: 100%;
             background-color: var(--primary);
-            width: 50%;
+            width: 75%;
             border-radius: 2px;
         }
-        
+
         .btn-small {
             background-color: var(--surface-light);
             color: var(--text);
@@ -273,22 +293,37 @@
             gap: 12px;
             position: relative;
         }
+
         .subject-card .icon-box {
             margin-bottom: 8px;
         }
-        .c-db .icon-box { background-color: rgba(0, 123, 255, 0.1); color: var(--primary); }
-        .c-ed .icon-box { background-color: rgba(40, 167, 69, 0.1); color: var(--green); }
-        .c-ia .icon-box { background-color: rgba(111, 66, 193, 0.1); color: var(--purple); }
+
+        .c-db .icon-box {
+            background-color: rgba(0, 123, 255, 0.1);
+            color: var(--primary);
+        }
+
+        .c-ed .icon-box {
+            background-color: rgba(40, 167, 69, 0.1);
+            color: var(--green);
+        }
+
+        .c-ia .icon-box {
+            background-color: rgba(111, 66, 193, 0.1);
+            color: var(--purple);
+        }
 
         .subject-card h4 {
             font-size: 14px;
             font-weight: 600;
             line-height: 1.2;
         }
+
         .subject-card p {
             font-size: 11px;
             color: var(--text-sec);
         }
+
         .folder-icon {
             position: absolute;
             bottom: 12px;
@@ -305,6 +340,7 @@
             border-radius: var(--radius);
             padding: 8px 0;
         }
+
         .quick-item {
             display: flex;
             align-items: center;
@@ -312,31 +348,48 @@
             gap: 16px;
             cursor: pointer;
         }
+
         .quick-item:not(:last-child) {
             border-bottom: 1px solid var(--border);
         }
+
         .quick-item i:first-child {
             font-size: 20px;
             width: 24px;
             text-align: center;
         }
-        .qi-blue { color: var(--primary); }
-        .qi-yellow { color: #ffc107; }
-        .qi-green { color: var(--green); }
-        .qi-purple { color: var(--purple); }
-        
+
+        .qi-blue {
+            color: var(--primary);
+        }
+
+        .qi-yellow {
+            color: #ffc107;
+        }
+
+        .qi-green {
+            color: var(--green);
+        }
+
+        .qi-purple {
+            color: var(--purple);
+        }
+
         .quick-text {
             flex: 1;
         }
+
         .quick-text h4 {
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 2px;
         }
+
         .quick-text p {
             font-size: 12px;
             color: var(--text-sec);
         }
+
         .quick-item .fa-chevron-right {
             color: var(--text-sec);
             font-size: 12px;
@@ -348,22 +401,26 @@
             padding: 32px 20px;
             text-align: center;
             margin-bottom: 24px;
-            background-color: rgba(30,30,30,0.5);
+            background-color: rgba(30, 30, 30, 0.5);
         }
+
         .drop-area i {
             font-size: 48px;
             color: var(--primary);
             margin-bottom: 16px;
         }
+
         .drop-area h3 {
             font-size: 16px;
             margin-bottom: 8px;
         }
+
         .drop-area p {
             font-size: 12px;
             color: var(--text-sec);
             margin-bottom: 16px;
         }
+
         .drop-area span {
             color: var(--primary);
             font-size: 14px;
@@ -380,6 +437,7 @@
             gap: 12px;
             align-items: flex-start;
         }
+
         .form-group.half-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -387,6 +445,7 @@
             background: none;
             padding: 0;
         }
+
         .form-card {
             background-color: var(--surface);
             border-radius: var(--radius);
@@ -395,25 +454,39 @@
             gap: 12px;
             position: relative;
         }
+
         .form-icon {
             color: var(--primary);
             font-size: 16px;
             margin-top: 2px;
         }
-        .form-card.c-green .form-icon { color: var(--green); }
-        .form-card.c-purple .form-icon { color: var(--purple); }
-        .form-card.c-yellow .form-icon { color: #ffc107; }
+
+        .form-card.c-green .form-icon {
+            color: var(--green);
+        }
+
+        .form-card.c-purple .form-icon {
+            color: var(--purple);
+        }
+
+        .form-card.c-yellow .form-icon {
+            color: #ffc107;
+        }
 
         .form-content {
             flex: 1;
         }
+
         .form-content label {
             display: block;
             font-size: 12px;
             color: var(--text-sec);
             margin-bottom: 4px;
         }
-        .form-content input, .form-content textarea, .form-content select {
+
+        .form-content input,
+        .form-content textarea,
+        .form-content select {
             width: 100%;
             background: none;
             border: none;
@@ -421,10 +494,12 @@
             font-size: 14px;
             outline: none;
         }
+
         .form-content textarea {
             resize: none;
             height: 40px;
         }
+
         .char-count {
             position: absolute;
             bottom: 12px;
@@ -432,6 +507,7 @@
             font-size: 10px;
             color: var(--text-sec);
         }
+
         .form-select-icon {
             position: absolute;
             right: 16px;
@@ -450,15 +526,18 @@
             align-items: flex-start;
             margin: 24px 0;
         }
+
         .info-box i {
             color: var(--primary);
             font-size: 18px;
         }
+
         .info-box h4 {
             font-size: 13px;
             color: var(--primary);
             margin-bottom: 4px;
         }
+
         .info-box p {
             font-size: 11px;
             color: var(--text-sec);
@@ -481,6 +560,7 @@
             cursor: pointer;
             transition: background 0.2s;
         }
+
         .btn-primary:active {
             background-color: var(--primary-dark);
         }
@@ -491,6 +571,7 @@
             gap: 12px;
             margin-bottom: 32px;
         }
+
         .shortcut-btn {
             background-color: var(--surface);
             border-radius: var(--radius);
@@ -501,18 +582,32 @@
             text-align: center;
             gap: 12px;
         }
+
         .shortcut-btn i {
             font-size: 24px;
         }
-        .s-blue i { color: var(--primary); }
-        .s-green i { color: var(--green); }
-        .s-purple i { color: var(--purple); }
-        .s-yellow i { color: #ffc107; }
-        
+
+        .s-blue i {
+            color: var(--primary);
+        }
+
+        .s-green i {
+            color: var(--green);
+        }
+
+        .s-purple i {
+            color: var(--purple);
+        }
+
+        .s-yellow i {
+            color: #ffc107;
+        }
+
         .shortcut-btn h4 {
             font-size: 13px;
             font-weight: 600;
         }
+
         .shortcut-btn p {
             font-size: 10px;
             color: var(--text-sec);
@@ -525,6 +620,7 @@
             margin-bottom: 24px;
             padding-bottom: 4px;
         }
+
         .chip {
             background-color: var(--surface);
             color: var(--text-sec);
@@ -535,6 +631,7 @@
             white-space: nowrap;
             cursor: pointer;
         }
+
         .chip.active {
             background-color: var(--primary);
             color: var(--text);
@@ -548,10 +645,12 @@
             margin-bottom: 16px;
             padding-bottom: 8px;
         }
+
         .book-card {
             min-width: 140px;
             cursor: pointer;
         }
+
         .book-cover {
             width: 140px;
             height: 200px;
@@ -560,6 +659,7 @@
             margin-bottom: 12px;
             background-color: var(--surface);
         }
+
         .book-card h4 {
             font-size: 14px;
             font-weight: 600;
@@ -568,16 +668,19 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
         .book-card p {
             font-size: 12px;
             color: var(--text-sec);
             margin-bottom: 8px;
         }
+
         .book-tags {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         .tag-available {
             font-size: 10px;
             color: var(--green);
@@ -588,6 +691,7 @@
             align-items: center;
             gap: 4px;
         }
+
         .book-card .fa-bookmark {
             color: var(--primary);
         }
@@ -598,12 +702,14 @@
             gap: 6px;
             margin-bottom: 32px;
         }
+
         .dot {
             width: 6px;
             height: 6px;
             border-radius: 50%;
             background-color: var(--border);
         }
+
         .dot.active {
             width: 16px;
             border-radius: 4px;
@@ -615,12 +721,14 @@
             flex-direction: column;
             gap: 16px;
         }
+
         .list-item {
             display: flex;
             gap: 16px;
             align-items: center;
             cursor: pointer;
         }
+
         .list-item img {
             width: 60px;
             height: 80px;
@@ -628,29 +736,35 @@
             object-fit: cover;
             background-color: var(--surface);
         }
+
         .list-info {
             flex: 1;
         }
+
         .list-info h4 {
             font-size: 14px;
             margin-bottom: 4px;
         }
+
         .list-info p {
             font-size: 12px;
             color: var(--text-sec);
             margin-bottom: 8px;
         }
+
         .location-info {
             display: flex;
             gap: 12px;
             font-size: 11px;
             color: var(--text-sec);
         }
+
         .location-info span {
             display: flex;
             align-items: center;
             gap: 4px;
         }
+
         .list-action {
             display: flex;
             flex-direction: column;
@@ -663,16 +777,19 @@
             gap: 20px;
             margin-bottom: 24px;
         }
+
         .detail-cover {
             width: 120px;
             height: 170px;
             border-radius: 12px;
             object-fit: cover;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
+
         .detail-info {
             flex: 1;
         }
+
         .detail-type {
             font-size: 10px;
             color: var(--primary);
@@ -681,19 +798,23 @@
             font-weight: 600;
             margin-bottom: 4px;
         }
+
         .detail-info h2 {
             font-size: 20px;
             margin-bottom: 4px;
         }
+
         .detail-info p {
             font-size: 13px;
             color: var(--text-sec);
             margin-bottom: 12px;
         }
+
         .detail-author {
             color: var(--primary) !important;
             margin-bottom: 12px !important;
         }
+
         .rating {
             display: flex;
             align-items: center;
@@ -701,14 +822,21 @@
             font-size: 12px;
             margin-bottom: 12px;
         }
-        .rating i { color: #ffc107; }
-        .rating span { color: var(--text-sec); }
-        
+
+        .rating i {
+            color: #ffc107;
+        }
+
+        .rating span {
+            color: var(--text-sec);
+        }
+
         .detail-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
+
         .d-tag {
             font-size: 10px;
             padding: 4px 8px;
@@ -716,6 +844,7 @@
             border: 1px solid var(--border);
             color: var(--text-sec);
         }
+
         .d-tag-green {
             color: var(--green);
             background-color: rgba(40, 167, 69, 0.1);
@@ -730,21 +859,25 @@
             padding: 16px;
             margin-bottom: 24px;
         }
+
         .tech-item {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         .tech-item i {
             color: var(--text-sec);
             font-size: 20px;
         }
+
         .tech-text h5 {
             font-size: 10px;
             color: var(--text-sec);
             font-weight: 400;
             margin-bottom: 2px;
         }
+
         .tech-text p {
             font-size: 13px;
             font-weight: 500;
@@ -756,6 +889,7 @@
             gap: 12px;
             margin-bottom: 24px;
         }
+
         .action-btn {
             background-color: var(--surface);
             border-radius: 12px;
@@ -768,8 +902,16 @@
             color: var(--text-sec);
             cursor: pointer;
         }
-        .action-btn i { font-size: 20px; }
-        .action-btn span { font-size: 11px; font-weight: 500; }
+
+        .action-btn i {
+            font-size: 20px;
+        }
+
+        .action-btn span {
+            font-size: 11px;
+            font-weight: 500;
+        }
+
         .btn-blue {
             background-color: var(--primary);
             color: var(--text);
@@ -781,6 +923,7 @@
             border-bottom: 1px solid var(--border);
             margin-bottom: 24px;
         }
+
         .tab {
             padding-bottom: 12px;
             font-size: 14px;
@@ -788,14 +931,18 @@
             cursor: pointer;
             position: relative;
         }
+
         .tab.active {
             color: var(--text);
             font-weight: 500;
         }
+
         .tab.active::after {
             content: '';
             position: absolute;
-            bottom: -1px; left: 0; right: 0;
+            bottom: -1px;
+            left: 0;
+            right: 0;
             height: 2px;
             background-color: var(--primary);
         }
@@ -806,6 +953,7 @@
             line-height: 1.6;
             margin-bottom: 16px;
         }
+
         .read-more {
             color: var(--primary);
             font-size: 14px;
@@ -824,24 +972,56 @@
             gap: 16px;
             margin-bottom: 12px;
         }
+
         .ri-icon {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 18px;
         }
-        .ri-video { background: rgba(253, 126, 20, 0.1); color: var(--orange); }
-        .ri-pdf { background: rgba(0, 123, 255, 0.1); color: var(--primary); }
-        .ri-book { background: rgba(40, 167, 69, 0.1); color: var(--green); }
-        
-        .ri-info { flex: 1; }
-        .ri-info h4 { font-size: 13px; margin-bottom: 4px; }
-        .ri-info p { font-size: 11px; color: var(--text-sec); }
-        .ri-info p span { display: inline-flex; align-items: center; gap: 4px; }
-        
-        .ri-action i { color: var(--primary); font-size: 18px; }
+
+        .ri-video {
+            background: rgba(253, 126, 20, 0.1);
+            color: var(--orange);
+        }
+
+        .ri-pdf {
+            background: rgba(0, 123, 255, 0.1);
+            color: var(--primary);
+        }
+
+        .ri-book {
+            background: rgba(40, 167, 69, 0.1);
+            color: var(--green);
+        }
+
+        .ri-info {
+            flex: 1;
+        }
+
+        .ri-info h4 {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .ri-info p {
+            font-size: 11px;
+            color: var(--text-sec);
+        }
+
+        .ri-info p span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .ri-action i {
+            color: var(--primary);
+            font-size: 18px;
+        }
 
         .recent-searches {
             display: flex;
@@ -849,6 +1029,7 @@
             gap: 8px;
             margin-bottom: 24px;
         }
+
         .search-tag {
             background-color: transparent;
             border: 1px solid var(--border);
@@ -860,6 +1041,7 @@
             align-items: center;
             gap: 6px;
         }
+
         .search-tag i.fa-xmark {
             cursor: pointer;
         }
@@ -868,7 +1050,7 @@
             font-size: 12px;
             color: var(--text-sec);
         }
-        
+
         .result-card {
             background-color: var(--surface);
             border-radius: var(--radius);
@@ -879,8 +1061,10 @@
             align-items: flex-start;
             cursor: pointer;
         }
+
         .result-icon {
-            width: 48px; height: 48px;
+            width: 48px;
+            height: 48px;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -888,41 +1072,85 @@
             font-size: 20px;
             flex-shrink: 0;
         }
-        .rc-pdf { background: rgba(0, 123, 255, 0.1); color: var(--primary); }
-        .rc-book { background: rgba(40, 167, 69, 0.1); color: var(--green); }
-        .rc-video { background: rgba(253, 126, 20, 0.1); color: var(--orange); }
-        .rc-academic { background: rgba(23, 162, 184, 0.1); color: var(--cyan); }
-        
+
+        .rc-pdf {
+            background: rgba(0, 123, 255, 0.1);
+            color: var(--primary);
+        }
+
+        .rc-book {
+            background: rgba(40, 167, 69, 0.1);
+            color: var(--green);
+        }
+
+        .rc-video {
+            background: rgba(253, 126, 20, 0.1);
+            color: var(--orange);
+        }
+
+        .rc-academic {
+            background: rgba(23, 162, 184, 0.1);
+            color: var(--cyan);
+        }
+
         .result-info {
             flex: 1;
         }
-        .result-info h4 { font-size: 15px; margin-bottom: 4px; }
-        .result-info p { font-size: 12px; color: var(--text-sec); margin-bottom: 8px; }
-        
+
+        .result-info h4 {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .result-info p {
+            font-size: 12px;
+            color: var(--text-sec);
+            margin-bottom: 8px;
+        }
+
         .result-meta {
             display: flex;
             align-items: center;
             gap: 8px;
             font-size: 10px;
         }
+
         .meta-badge {
             padding: 2px 6px;
             border-radius: 4px;
             font-weight: 600;
         }
-        .mb-pdf { background: rgba(0, 123, 255, 0.2); color: var(--primary); }
-        .mb-book { background: rgba(40, 167, 69, 0.2); color: var(--green); }
-        .mb-video { background: rgba(253, 126, 20, 0.2); color: var(--orange); }
-        .meta-text { color: var(--text-sec); }
-        
+
+        .mb-pdf {
+            background: rgba(0, 123, 255, 0.2);
+            color: var(--primary);
+        }
+
+        .mb-book {
+            background: rgba(40, 167, 69, 0.2);
+            color: var(--green);
+        }
+
+        .mb-video {
+            background: rgba(253, 126, 20, 0.2);
+            color: var(--orange);
+        }
+
+        .meta-text {
+            color: var(--text-sec);
+        }
+
         .result-actions {
             display: flex;
             align-items: center;
             gap: 16px;
             color: var(--text-sec);
         }
-        .result-actions .fa-bookmark { color: var(--primary); }
-        
+
+        .result-actions .fa-bookmark {
+            color: var(--primary);
+        }
+
         .suggest-banner {
             background-color: rgba(0, 123, 255, 0.05);
             border: 1px solid var(--border);
@@ -933,10 +1161,26 @@
             gap: 16px;
             margin-top: 24px;
         }
-        .suggest-banner i { font-size: 24px; color: var(--primary); }
-        .suggest-info { flex: 1; }
-        .suggest-info h4 { font-size: 13px; margin-bottom: 4px; }
-        .suggest-info p { font-size: 11px; color: var(--text-sec); }
+
+        .suggest-banner i {
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .suggest-info {
+            flex: 1;
+        }
+
+        .suggest-info h4 {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .suggest-info p {
+            font-size: 11px;
+            color: var(--text-sec);
+        }
+
         .btn-outline {
             background: transparent;
             border: 1px solid var(--border);
@@ -960,6 +1204,7 @@
             z-index: 1000;
             padding-bottom: env(safe-area-inset-bottom);
         }
+
         .nav-item {
             display: flex;
             flex-direction: column;
@@ -971,740 +1216,763 @@
             gap: 6px;
             width: 60px;
         }
+
         .nav-item i {
             font-size: 20px;
         }
+
         .nav-item.active {
             color: var(--primary);
         }
     </style>
 </head>
+
 <body>
 
-<div class="app-container">
+    <div class="app-container">
 
-    <!-- ================= TELA INÍCIO ================= -->
-    <div class="screen active" id="inicio">
-        <div class="header">
-            <i class="fa-solid fa-bars header-icon"></i>
-            <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
-        </div>
-
-        <div class="greeting-area">
-            <p>Boa noite,</p>
-            <h1>Christian</h1>
-            <p>Encontre materiais, livros e recursos<br>para seus estudos.</p>
-        </div>
-
-        <div class="search-container" onclick="navigate('buscar')">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Pesquisar livros, PDFs, disciplinas..." readonly>
-            <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
-        </div>
-
-        <div class="section-header">
-            <h2>Continue estudando</h2>
-            <a href="#" class="see-all">Ver todos</a>
-        </div>
-        <div class="card-continue">
-            <div class="continue-top">
-                <div class="icon-box">
-                    <i class="fa-regular fa-file-lines"></i>
-                </div>
-                <div class="continue-info">
-                    <h3>Programação Imperativa</h3>
-                    <p>Lista 1 - Estruturas de Repetição</p>
-                </div>
+        <!-- ================= TELA INÍCIO ================= -->
+        <div class="screen active" id="inicio">
+            <div class="header">
+                <i class="fa-solid fa-bars header-icon"></i>
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
             </div>
-            <div class="continue-bottom">
-                <div class="progress-wrapper">
-                    <div class="progress-text">50% concluído</div>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
+
+            <div class="greeting-area">
+                <p>Boa noite,</p>
+                <h1>João Silva</h1>
+                <p style="font-size: 13px; color: var(--primary); margin-top: -4px; margin-bottom: 8px;">Matrícula: 202400123456</p>
+                <p>Encontre materiais, livros e recursos<br>para seus estudos.</p>
+            </div>
+
+            <div class="search-container" onclick="navigate('buscar')">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar livros, PDFs, disciplinas..." readonly>
+                <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
+            </div>
+
+            <div class="section-header">
+                <h2>Continue estudando</h2>
+                <a href="#" class="see-all">Ver todos</a>
+            </div>
+            <div class="card-continue">
+                <div class="continue-top">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+                    <div class="continue-info">
+                        <h3>Programação Imperativa</h3>
+                        <p>Lista 1 - Estruturas de Repetição</p>
                     </div>
                 </div>
-                <button class="btn-small">Abrir</button>
-            </div>
-        </div>
-
-        <div class="section-header">
-            <h2>Minhas disciplinas</h2>
-            <a href="#" class="see-all">Ver todas</a>
-        </div>
-        <div class="h-scroll">
-            <div class="subject-card c-db">
-                <div class="icon-box">
-                    <i class="fa-solid fa-database"></i>
+                <div class="continue-bottom">
+                    <div class="progress-wrapper">
+                        <div class="progress-text">75% concluído</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button class="btn-small">Abrir</button>
                 </div>
-                <h4>Banco de Dados</h4>
-                <p>8 materiais</p>
-                <i class="fa-regular fa-folder folder-icon"></i>
             </div>
-            <div class="subject-card c-ed">
-                <div class="icon-box">
-                    <i class="fa-solid fa-code"></i>
+
+            <div class="section-header">
+                <h2>Minhas disciplinas</h2>
+                <a href="#" class="see-all">Ver todas</a>
+            </div>
+            <div class="h-scroll">
+                <div class="subject-card c-db">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h4>Banco de Dados</h4>
+                    <p>8 materiais</p>
+                    <i class="fa-regular fa-folder folder-icon"></i>
                 </div>
-                <h4>Estrutura de Dados</h4>
-                <p>21 materiais</p>
-                <i class="fa-regular fa-folder folder-icon"></i>
-            </div>
-            <div class="subject-card c-ia">
-                <div class="icon-box">
-                    <i class="fa-solid fa-brain"></i>
+                <div class="subject-card c-ed">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4>Estrutura de Dados</h4>
+                    <p>21 materiais</p>
+                    <i class="fa-regular fa-folder folder-icon"></i>
                 </div>
-                <h4>Inteligência Artificial</h4>
-                <p>5 materiais</p>
-                <i class="fa-regular fa-folder folder-icon"></i>
-            </div>
-        </div>
-
-        <div class="section-header">
-            <h2>Acesso rápido</h2>
-        </div>
-        <div class="quick-access">
-            <div class="quick-item" onclick="navigate('biblioteca')">
-                <i class="fa-solid fa-book-open qi-blue"></i>
-                <div class="quick-text">
-                    <h4>Biblioteca</h4>
-                    <p>Consulte livros e acervo físico</p>
+                <div class="subject-card c-ia">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4>Inteligência Artificial</h4>
+                    <p>5 materiais</p>
+                    <i class="fa-regular fa-folder folder-icon"></i>
                 </div>
-                <i class="fa-solid fa-chevron-right"></i>
             </div>
-            <div class="quick-item">
-                <i class="fa-regular fa-star qi-yellow"></i>
-                <div class="quick-text">
-                    <h4>Favoritos</h4>
-                    <p>Seus materiais salvos</p>
+
+            <div class="section-header">
+                <h2>Acesso rápido</h2>
+            </div>
+            <div class="quick-access">
+                <div class="quick-item" onclick="navigate('biblioteca')">
+                    <i class="fa-solid fa-book-open qi-blue"></i>
+                    <div class="quick-text">
+                        <h4>Biblioteca</h4>
+                        <p>Consulte livros e acervo físico</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="quick-item">
-                <i class="fa-solid fa-download qi-green"></i>
-                <div class="quick-text">
-                    <h4>Downloads</h4>
-                    <p>Materiais baixados</p>
+                <div class="quick-item">
+                    <i class="fa-regular fa-star qi-yellow"></i>
+                    <div class="quick-text">
+                        <h4>Favoritos</h4>
+                        <p>Seus materiais salvos</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <div class="quick-item" onclick="navigate('upload')">
-                <i class="fa-solid fa-arrow-up-from-bracket qi-purple"></i>
-                <div class="quick-text">
-                    <h4>Upload de material</h4>
-                    <p>Envie materiais para compartilhar</p>
+                <div class="quick-item">
+                    <i class="fa-solid fa-download qi-green"></i>
+                    <div class="quick-text">
+                        <h4>Downloads</h4>
+                        <p>Materiais baixados</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <i class="fa-solid fa-chevron-right"></i>
+                <div class="quick-item" onclick="navigate('upload')">
+                    <i class="fa-solid fa-arrow-up-from-bracket qi-purple"></i>
+                    <div class="quick-text">
+                        <h4>Upload de material</h4>
+                        <p>Envie materiais para compartilhar</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- ================= TELA BUSCAR ================= -->
-    <div class="screen" id="buscar">
-        <div class="header">
-            <i class="fa-solid fa-bars header-icon"></i>
-            <div class="header-title">Buscar</div>
-            <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
+        <!-- ================= TELA BUSCAR ================= -->
+        <div class="screen" id="buscar">
+            <div class="header">
+                <i class="fa-solid fa-bars header-icon"></i>
+                <div class="header-title">Buscar</div>
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
+            </div>
+
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" value="Clean Code">
+                <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
+            </div>
+
+            <div class="chips">
+                <div class="chip active">Todos</div>
+                <div class="chip"><i class="fa-regular fa-file-pdf"></i> PDFs</div>
+                <div class="chip"><i class="fa-solid fa-book"></i> Livros</div>
+                <div class="chip"><i class="fa-solid fa-graduation-cap"></i> Disciplinas</div>
+                <div class="chip"><i class="fa-regular fa-circle-play"></i> Vídeos</div>
+            </div>
+
+            <div class="section-header">
+                <h2 style="font-size: 14px;">Buscas recentes</h2>
+                <a href="#" class="see-all">Limpar tudo</a>
+            </div>
+            <div class="recent-searches">
+                <div class="search-tag"><i class="fa-regular fa-clock"></i> Clean Code <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="search-tag"><i class="fa-regular fa-clock"></i> Estrutura de Dados <i
+                        class="fa-solid fa-xmark"></i></div>
+                <div class="search-tag"><i class="fa-regular fa-clock"></i> Teoria Geral dos Sistemas <i
+                        class="fa-solid fa-xmark"></i></div>
+            </div>
+
+            <div class="section-header" style="margin-top: 24px;">
+                <h2 style="font-size: 16px;">Resultados para: <span style="color: var(--primary);">Clean Code</span>
+                </h2>
+                <span class="result-count">12 resultados</span>
+            </div>
+
+            <div class="result-list">
+                <div class="result-card" onclick="openBookDetails()">
+                    <div class="result-icon rc-pdf"><i class="fa-regular fa-file-lines"></i></div>
+                    <div class="result-info">
+                        <h4>Clean Code</h4>
+                        <p>Robert C. Martin</p>
+                        <div class="result-meta">
+                            <span class="meta-badge mb-pdf">PDF</span>
+                            <span class="meta-text">• Programação Imperativa</span>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="result-card" onclick="openBookDetails()">
+                    <div class="result-icon rc-book"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="result-info">
+                        <h4>Clean Code</h4>
+                        <p>Robert C. Martin</p>
+                        <div class="result-meta" style="margin-bottom: 6px;">
+                            <span class="meta-badge mb-book">LIVRO</span>
+                            <span class="meta-text">• Bibliografia Básica</span>
+                        </div>
+                        <div class="tag-available" style="background: none; padding: 0;"><i
+                                class="fa-solid fa-circle-check"></i> Disponível na biblioteca</div>
+                    </div>
+                    <div class="result-actions">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon rc-pdf" style="background: rgba(111, 66, 193, 0.1); color: var(--purple);">
+                        <i class="fa-solid fa-code"></i></div>
+                    <div class="result-info">
+                        <h4>Resumos - Clean Code</h4>
+                        <p>Material de Aula</p>
+                        <div class="result-meta">
+                            <span class="meta-badge mb-pdf">PDF</span>
+                            <span class="meta-text">• Programação Imperativa</span>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon rc-video"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="result-info">
+                        <h4>Clean Code - Conceitos Principais</h4>
+                        <p>Professor Gilton José</p>
+                        <div class="result-meta">
+                            <span class="meta-badge mb-video">VÍDEO</span>
+                            <span class="meta-text">• Teoria Geral dos Sistemas</span>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon rc-academic"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="result-info">
+                        <h4>Clean Code na Prática</h4>
+                        <p>Trabalho Acadêmico</p>
+                        <div class="result-meta">
+                            <span class="meta-badge mb-pdf">PDF</span>
+                            <span class="meta-text">• Engenharia de Software</span>
+                        </div>
+                    </div>
+                    <div class="result-actions">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggest-banner">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <div class="suggest-info">
+                    <h4>Não encontrou o que estava procurando?</h4>
+                    <p>Sugira um material para nossa biblioteca.</p>
+                </div>
+                <button class="btn-outline">Sugerir material</button>
+            </div>
         </div>
 
-        <div class="search-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" value="Clean Code">
-            <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
-        </div>
+        <!-- ================= TELA BIBLIOTECA ================= -->
+        <div class="screen" id="biblioteca">
+            <div class="header">
+                <i class="fa-solid fa-bars header-icon"></i>
+                <div class="header-title">Biblioteca</div>
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
+            </div>
 
-        <div class="chips">
-            <div class="chip active">Todos</div>
-            <div class="chip"><i class="fa-regular fa-file-pdf"></i> PDFs</div>
-            <div class="chip"><i class="fa-solid fa-book"></i> Livros</div>
-            <div class="chip"><i class="fa-solid fa-graduation-cap"></i> Disciplinas</div>
-            <div class="chip"><i class="fa-regular fa-circle-play"></i> Vídeos</div>
-        </div>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar livros, autores, assuntos...">
+                <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
+            </div>
 
-        <div class="section-header">
-            <h2 style="font-size: 14px;">Buscas recentes</h2>
-            <a href="#" class="see-all">Limpar tudo</a>
-        </div>
-        <div class="recent-searches">
-            <div class="search-tag"><i class="fa-regular fa-clock"></i> Clean Code <i class="fa-solid fa-xmark"></i></div>
-            <div class="search-tag"><i class="fa-regular fa-clock"></i> Estrutura de Dados <i class="fa-solid fa-xmark"></i></div>
-            <div class="search-tag"><i class="fa-regular fa-clock"></i> Teoria Geral dos Sistemas <i class="fa-solid fa-xmark"></i></div>
-        </div>
+            <div class="lib-shortcuts">
+                <div class="shortcut-btn s-blue">
+                    <i class="fa-solid fa-book-journal-whills"></i>
+                    <div>
+                        <h4>Acervo físico</h4>
+                        <p>Livros disponíveis na BICEN</p>
+                    </div>
+                </div>
+                <div class="shortcut-btn s-green">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <div>
+                        <h4>Acervo digital</h4>
+                        <p>E-books, PDFs e materiais</p>
+                    </div>
+                </div>
+                <div class="shortcut-btn s-purple">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <div>
+                        <h4>Recomendados</h4>
+                        <p>Sugestões para você</p>
+                    </div>
+                </div>
+                <div class="shortcut-btn s-yellow">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div>
+                        <h4>Empréstimos</h4>
+                        <p>Histórico e renovações</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="section-header" style="margin-top: 24px;">
-            <h2 style="font-size: 16px;">Resultados para: <span style="color: var(--primary);">Clean Code</span></h2>
-            <span class="result-count">12 resultados</span>
-        </div>
+            <div class="section-header">
+                <h2>Categorias</h2>
+                <a href="#" class="see-all">Ver todas</a>
+            </div>
+            <div class="chips">
+                <div class="chip active">Todos</div>
+                <div class="chip">Computação</div>
+                <div class="chip">Engenharias</div>
+                <div class="chip">Exatas</div>
+                <div class="chip">Humanas</div>
+                <div class="chip">Saúde</div>
+            </div>
 
-        <div class="result-list">
-            <div class="result-card" onclick="openBookDetails()">
-                <div class="result-icon rc-pdf"><i class="fa-regular fa-file-lines"></i></div>
-                <div class="result-info">
+            <div class="section-header">
+                <h2>Destaques</h2>
+            </div>
+            <div class="book-carousel">
+                <div class="book-card" onclick="openBookDetails()">
+                    <img src="https://source.unsplash.com/random/300x450/?space,book" alt="Clean Code"
+                        class="book-cover">
                     <h4>Clean Code</h4>
                     <p>Robert C. Martin</p>
-                    <div class="result-meta">
-                        <span class="meta-badge mb-pdf">PDF</span>
-                        <span class="meta-text">• Programação Imperativa</span>
+                    <div class="book-tags">
+                        <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
+                        <i class="fa-solid fa-bookmark"></i>
                     </div>
                 </div>
-                <div class="result-actions">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            
-            <div class="result-card" onclick="openBookDetails()">
-                <div class="result-icon rc-book"><i class="fa-solid fa-book-open"></i></div>
-                <div class="result-info">
-                    <h4>Clean Code</h4>
-                    <p>Robert C. Martin</p>
-                    <div class="result-meta" style="margin-bottom: 6px;">
-                        <span class="meta-badge mb-book">LIVRO</span>
-                        <span class="meta-text">• Bibliografia Básica</span>
-                    </div>
-                    <div class="tag-available" style="background: none; padding: 0;"><i class="fa-solid fa-circle-check"></i> Disponível na biblioteca</div>
-                </div>
-                <div class="result-actions">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            
-            <div class="result-card">
-                <div class="result-icon rc-pdf" style="background: rgba(111, 66, 193, 0.1); color: var(--purple);"><i class="fa-solid fa-code"></i></div>
-                <div class="result-info">
-                    <h4>Resumos - Clean Code</h4>
-                    <p>Material de Aula</p>
-                    <div class="result-meta">
-                        <span class="meta-badge mb-pdf">PDF</span>
-                        <span class="meta-text">• Programação Imperativa</span>
-                    </div>
-                </div>
-                <div class="result-actions">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            
-            <div class="result-card">
-                <div class="result-icon rc-video"><i class="fa-regular fa-circle-play"></i></div>
-                <div class="result-info">
-                    <h4>Clean Code - Conceitos Principais</h4>
-                    <p>Professor Gilton José</p>
-                    <div class="result-meta">
-                        <span class="meta-badge mb-video">VÍDEO</span>
-                        <span class="meta-text">• Teoria Geral dos Sistemas</span>
-                    </div>
-                </div>
-                <div class="result-actions">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            
-            <div class="result-card">
-                <div class="result-icon rc-academic"><i class="fa-solid fa-graduation-cap"></i></div>
-                <div class="result-info">
-                    <h4>Clean Code na Prática</h4>
-                    <p>Trabalho Acadêmico</p>
-                    <div class="result-meta">
-                        <span class="meta-badge mb-pdf">PDF</span>
-                        <span class="meta-text">• Engenharia de Software</span>
-                    </div>
-                </div>
-                <div class="result-actions">
-                    <i class="fa-solid fa-bookmark"></i>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="suggest-banner">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
-            <div class="suggest-info">
-                <h4>Não encontrou o que estava procurando?</h4>
-                <p>Sugira um material para nossa biblioteca.</p>
-            </div>
-            <button class="btn-outline">Sugerir material</button>
-        </div>
-    </div>
-
-    <!-- ================= TELA BIBLIOTECA ================= -->
-    <div class="screen" id="biblioteca">
-        <div class="header">
-            <i class="fa-solid fa-bars header-icon"></i>
-            <div class="header-title">Biblioteca</div>
-            <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
-        </div>
-
-        <div class="search-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Pesquisar livros, autores, assuntos...">
-            <i class="fa-solid fa-sliders" style="color: var(--primary);"></i>
-        </div>
-
-        <div class="lib-shortcuts">
-            <div class="shortcut-btn s-blue">
-                <i class="fa-solid fa-book-journal-whills"></i>
-                <div>
-                    <h4>Acervo físico</h4>
-                    <p>Livros disponíveis na BICEN</p>
-                </div>
-            </div>
-            <div class="shortcut-btn s-green">
-                <i class="fa-solid fa-file-pdf"></i>
-                <div>
-                    <h4>Acervo digital</h4>
-                    <p>E-books, PDFs e materiais</p>
-                </div>
-            </div>
-            <div class="shortcut-btn s-purple">
-                <i class="fa-solid fa-bookmark"></i>
-                <div>
-                    <h4>Recomendados</h4>
-                    <p>Sugestões para você</p>
-                </div>
-            </div>
-            <div class="shortcut-btn s-yellow">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <div>
-                    <h4>Empréstimos</h4>
-                    <p>Histórico e renovações</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-header">
-            <h2>Categorias</h2>
-            <a href="#" class="see-all">Ver todas</a>
-        </div>
-        <div class="chips">
-            <div class="chip active">Todos</div>
-            <div class="chip">Computação</div>
-            <div class="chip">Engenharias</div>
-            <div class="chip">Exatas</div>
-            <div class="chip">Humanas</div>
-            <div class="chip">Saúde</div>
-        </div>
-
-        <div class="section-header">
-            <h2>Destaques</h2>
-        </div>
-        <div class="book-carousel">
-            <div class="book-card" onclick="openBookDetails()">
-                <img src="https://source.unsplash.com/random/300x450/?space,book" alt="Clean Code" class="book-cover">
-                <h4>Clean Code</h4>
-                <p>Robert C. Martin</p>
-                <div class="book-tags">
-                    <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-solid fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="book-card" onclick="openBookDetails()">
-                <img src="https://source.unsplash.com/random/300x450/?network,nodes" alt="Estrutura de Dados" class="book-cover">
-                <h4>Estrutura de Dados</h4>
-                <p>N. Ziviani</p>
-                <div class="book-tags">
-                    <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="book-card" onclick="openBookDetails()">
-                <img src="https://source.unsplash.com/random/300x450/?dots,pattern" alt="Algoritmos" class="book-cover">
-                <h4>Algoritmos</h4>
-                <p>T. H. Cormen</p>
-                <div class="book-tags">
-                    <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-            <div class="book-card" onclick="openBookDetails()">
-                <img src="https://source.unsplash.com/random/300x450/?database" alt="Banco de Dados" class="book-cover">
-                <h4>Banco de Dados</h4>
-                <p>E. F. Codd</p>
-                <div class="book-tags">
-                    <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-
-        <div class="section-header">
-            <h2>Disponíveis na BICEN</h2>
-            <a href="#" class="see-all">Ver todos</a>
-        </div>
-        <div class="list-vertical">
-            <div class="list-item" onclick="openBookDetails()">
-                <img src="https://source.unsplash.com/random/100x150/?space,book" alt="Clean Code">
-                <div class="list-info">
-                    <h4>Clean Code</h4>
-                    <p>Robert C. Martin</p>
-                    <div class="location-info">
-                        <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
-                        <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.133 MAR</span>
-                    </div>
-                </div>
-                <div class="list-action">
-                    <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
-                </div>
-            </div>
-            <div class="list-item">
-                <img src="https://source.unsplash.com/random/100x150/?network,nodes" alt="Estrutura de Dados">
-                <div class="list-info">
+                <div class="book-card" onclick="openBookDetails()">
+                    <img src="https://source.unsplash.com/random/300x450/?network,nodes" alt="Estrutura de Dados"
+                        class="book-cover">
                     <h4>Estrutura de Dados</h4>
                     <p>N. Ziviani</p>
-                    <div class="location-info">
-                        <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
-                        <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.73 Z72e</span>
+                    <div class="book-tags">
+                        <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
                 </div>
-                <div class="list-action">
-                    <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
-                </div>
-            </div>
-            <div class="list-item">
-                <img src="https://source.unsplash.com/random/100x150/?dots,pattern" alt="Algoritmos">
-                <div class="list-info">
-                    <h4>Algoritmos: Teoria e Prática</h4>
+                <div class="book-card" onclick="openBookDetails()">
+                    <img src="https://source.unsplash.com/random/300x450/?dots,pattern" alt="Algoritmos"
+                        class="book-cover">
+                    <h4>Algoritmos</h4>
                     <p>T. H. Cormen</p>
-                    <div class="location-info">
-                        <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
-                        <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.1 C74a</span>
+                    <div class="book-tags">
+                        <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
+                        <i class="fa-regular fa-bookmark"></i>
                     </div>
                 </div>
-                <div class="list-action">
-                    <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i> Disponível</span>
-                    <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
+                <div class="book-card" onclick="openBookDetails()">
+                    <img src="https://source.unsplash.com/random/300x450/?database" alt="Banco de Dados"
+                        class="book-cover">
+                    <h4>Banco de Dados</h4>
+                    <p>E. F. Codd</p>
+                    <div class="book-tags">
+                        <span class="tag-available"><i class="fa-solid fa-circle-check"></i> Disponível</span>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="section-header">
+                <h2>Disponíveis na BICEN</h2>
+                <a href="#" class="see-all">Ver todos</a>
+            </div>
+            <div class="list-vertical">
+                <div class="list-item" onclick="openBookDetails()">
+                    <img src="https://source.unsplash.com/random/100x150/?space,book" alt="Clean Code">
+                    <div class="list-info">
+                        <h4>Clean Code</h4>
+                        <p>Robert C. Martin</p>
+                        <div class="location-info">
+                            <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
+                            <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.133 MAR</span>
+                        </div>
+                    </div>
+                    <div class="list-action">
+                        <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i>
+                            Disponível</span>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="https://source.unsplash.com/random/100x150/?network,nodes" alt="Estrutura de Dados">
+                    <div class="list-info">
+                        <h4>Estrutura de Dados</h4>
+                        <p>N. Ziviani</p>
+                        <div class="location-info">
+                            <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
+                            <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.73 Z72e</span>
+                        </div>
+                    </div>
+                    <div class="list-action">
+                        <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i>
+                            Disponível</span>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="https://source.unsplash.com/random/100x150/?dots,pattern" alt="Algoritmos">
+                    <div class="list-info">
+                        <h4>Algoritmos: Teoria e Prática</h4>
+                        <p>T. H. Cormen</p>
+                        <div class="location-info">
+                            <span><i class="fa-solid fa-location-dot"></i> Campus São Cristóvão</span>
+                            <span><i class="fa-regular fa-folder-open"></i> Prateleira: 005.1 C74a</span>
+                        </div>
+                    </div>
+                    <div class="list-action">
+                        <span class="tag-available" style="background: none;"><i class="fa-solid fa-circle-check"></i>
+                            Disponível</span>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--text-sec);"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- ================= TELA UPLOAD ================= -->
-    <div class="screen" id="upload">
-        <div class="header">
-            <i class="fa-solid fa-bars header-icon"></i>
-            <div class="header-title">Upload de material</div>
-            <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
-        </div>
-
-        <div class="drop-area">
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <h3>Selecione um arquivo</h3>
-            <p>Arraste e solte aqui ou toque para escolher<br>PDF, DOCX, PPTX, ZIP (máx. 50 MB)</p>
-            <span>Escolher arquivo</span>
-        </div>
-
-        <div class="section-header">
-            <h2>Informações do material</h2>
-        </div>
-
-        <div class="form-card c-blue" style="margin-bottom: 12px;">
-            <i class="fa-regular fa-file-lines form-icon"></i>
-            <div class="form-content">
-                <label>Título *</label>
-                <input type="text" placeholder="Ex.: Slides - Programação Imperativa">
-                <span class="char-count">0/100</span>
+        <!-- ================= TELA UPLOAD ================= -->
+        <div class="screen" id="upload">
+            <div class="header">
+                <i class="fa-solid fa-bars header-icon"></i>
+                <div class="header-title">Upload de material</div>
+                <img src="https://source.unsplash.com/random/100x100/?portrait,man" alt="Perfil" class="profile-pic">
             </div>
-        </div>
 
-        <div class="form-card c-blue" style="margin-bottom: 12px;">
-            <i class="fa-solid fa-align-left form-icon"></i>
-            <div class="form-content">
-                <label>Descrição</label>
-                <textarea placeholder="Descreva brevemente o conteúdo deste material..."></textarea>
-                <span class="char-count">0/500</span>
+            <div class="drop-area">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h3>Selecione um arquivo</h3>
+                <p>Arraste e solte aqui ou toque para escolher<br>PDF, DOCX, PPTX, ZIP (máx. 50 MB)</p>
+                <span>Escolher arquivo</span>
             </div>
-        </div>
 
-        <div class="form-group half-grid">
-            <div class="form-card c-blue">
-                <i class="fa-regular fa-file form-icon"></i>
+            <div class="section-header">
+                <h2>Informações do material</h2>
+            </div>
+
+            <div class="form-card c-blue" style="margin-bottom: 12px;">
+                <i class="fa-regular fa-file-lines form-icon"></i>
                 <div class="form-content">
-                    <label>Tipo de material *</label>
-                    <select>
-                        <option value="" disabled selected>Selecione o tipo</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    <label>Título *</label>
+                    <input type="text" placeholder="Ex.: Slides - Programação Imperativa">
+                    <span class="char-count">0/100</span>
                 </div>
             </div>
-            <div class="form-card c-green">
-                <i class="fa-solid fa-book form-icon"></i>
+
+            <div class="form-card c-blue" style="margin-bottom: 12px;">
+                <i class="fa-solid fa-align-left form-icon"></i>
                 <div class="form-content">
-                    <label>Disciplina *</label>
-                    <select>
-                        <option value="" disabled selected>Selecione a disciplina</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    <label>Descrição</label>
+                    <textarea placeholder="Descreva brevemente o conteúdo deste material..."></textarea>
+                    <span class="char-count">0/500</span>
                 </div>
             </div>
-        </div>
 
-        <div class="form-group half-grid">
-            <div class="form-card c-purple">
-                <i class="fa-regular fa-user form-icon"></i>
+            <div class="form-group half-grid">
+                <div class="form-card c-blue">
+                    <i class="fa-regular fa-file form-icon"></i>
+                    <div class="form-content">
+                        <label>Tipo de material *</label>
+                        <select>
+                            <option value="" disabled selected>Selecione o tipo</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    </div>
+                </div>
+                <div class="form-card c-green">
+                    <i class="fa-solid fa-book form-icon"></i>
+                    <div class="form-content">
+                        <label>Disciplina *</label>
+                        <select>
+                            <option value="" disabled selected>Selecione a disciplina</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group half-grid">
+                <div class="form-card c-purple">
+                    <i class="fa-regular fa-user form-icon"></i>
+                    <div class="form-content">
+                        <label>Professor <span style="opacity: 0.7">(opcional)</span></label>
+                        <select>
+                            <option value="" disabled selected>Selecione o professor</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    </div>
+                </div>
+                <div class="form-card c-yellow">
+                    <i class="fa-regular fa-calendar form-icon"></i>
+                    <div class="form-content">
+                        <label>Período / Turma <span style="opacity: 0.7">(opcional)</span></label>
+                        <select>
+                            <option value="" disabled selected>Selecione o período</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card c-blue" style="margin-bottom: 12px;">
+                <i class="fa-solid fa-tag form-icon"></i>
                 <div class="form-content">
-                    <label>Professor <span style="opacity: 0.7">(opcional)</span></label>
-                    <select>
-                        <option value="" disabled selected>Selecione o professor</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down form-select-icon"></i>
+                    <label>Tags <span style="opacity: 0.7">(opcional)</span></label>
+                    <input type="text" placeholder="Ex.: algoritmos, aula, lista, revisão">
+                    <span class="char-count">0/5</span>
                 </div>
             </div>
-            <div class="form-card c-yellow">
-                <i class="fa-regular fa-calendar form-icon"></i>
-                <div class="form-content">
-                    <label>Período / Turma <span style="opacity: 0.7">(opcional)</span></label>
-                    <select>
-                        <option value="" disabled selected>Selecione o período</option>
-                    </select>
-                    <i class="fa-solid fa-chevron-down form-select-icon"></i>
+
+            <div class="info-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                    <h4>Ao enviar, você confirma que possui autorização</h4>
+                    <p>Certifique-se de que o material não viola direitos autorais. Materiais ilegais serão removidos.
+                    </p>
                 </div>
             </div>
-        </div>
 
-        <div class="form-card c-blue" style="margin-bottom: 12px;">
-            <i class="fa-solid fa-tag form-icon"></i>
-            <div class="form-content">
-                <label>Tags <span style="opacity: 0.7">(opcional)</span></label>
-                <input type="text" placeholder="Ex.: algoritmos, aula, lista, revisão">
-                <span class="char-count">0/5</span>
-            </div>
-        </div>
-
-        <div class="info-box">
-            <i class="fa-solid fa-circle-info"></i>
-            <div>
-                <h4>Ao enviar, você confirma que possui autorização</h4>
-                <p>Certifique-se de que o material não viola direitos autorais. Materiais ilegais serão removidos.</p>
-            </div>
-        </div>
-
-        <button class="btn-primary">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i> Enviar material
-        </button>
-    </div>
-
-    <!-- ================= TELA DETALHES DO LIVRO ================= -->
-    <div class="screen" id="detalhes">
-        <div class="header">
-            <i class="fa-solid fa-arrow-left header-icon" onclick="goBack()"></i>
-            <div class="header-title">Clean Code</div>
-            <div style="display: flex; gap: 16px; font-size: 20px;">
-                <i class="fa-regular fa-bookmark"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-        </div>
-
-        <div class="detail-hero">
-            <img src="https://source.unsplash.com/random/300x450/?space,book" alt="Clean Code" class="detail-cover">
-            <div class="detail-info">
-                <div class="detail-type">LIVRO</div>
-                <h2>Clean Code</h2>
-                <p>A Handbook of Agile Software Craftsmanship</p>
-                <a href="#" class="detail-author" style="text-decoration: none; display: block;">Robert C. Martin</a>
-                
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <span style="color: var(--text); font-weight: 500;">4.8</span>
-                    <span>• 126 avaliações</span>
-                </div>
-                
-                <div class="detail-tags">
-                    <span class="d-tag d-tag-green"><i class="fa-solid fa-circle-check"></i> Disponível na biblioteca</span>
-                    <span class="d-tag"><i class="fa-regular fa-clock"></i> Bibliografia básica</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="tech-info">
-            <div class="tech-item">
-                <i class="fa-solid fa-book-open"></i>
-                <div class="tech-text">
-                    <h5>Tipo</h5>
-                    <p>Livro</p>
-                </div>
-            </div>
-            <div class="tech-item">
-                <i class="fa-regular fa-calendar"></i>
-                <div class="tech-text">
-                    <h5>Ano</h5>
-                    <p>2008</p>
-                </div>
-            </div>
-            <div class="tech-item">
-                <i class="fa-solid fa-globe"></i>
-                <div class="tech-text">
-                    <h5>Idioma</h5>
-                    <p>Inglês</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="action-grid">
-            <button class="action-btn btn-blue">
-                <i class="fa-solid fa-book-open-reader"></i>
-                <span>Ler online</span>
-            </button>
-            <button class="action-btn">
-                <i class="fa-solid fa-download"></i>
-                <span>Baixar PDF</span>
-            </button>
-            <button class="action-btn">
-                <i class="fa-regular fa-star"></i>
-                <span>Favoritar</span>
-            </button>
-            <button class="action-btn">
-                <i class="fa-solid fa-share-nodes"></i>
-                <span>Compartilhar</span>
+            <button class="btn-primary">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i> Enviar material
             </button>
         </div>
 
-        <div class="tabs">
-            <div class="tab active">Sobre</div>
-            <div class="tab">Arquivos (3)</div>
-            <div class="tab">Informações</div>
-            <div class="tab">Comentários (12)</div>
+        <!-- ================= TELA DETALHES DO LIVRO ================= -->
+        <div class="screen" id="detalhes">
+            <div class="header">
+                <i class="fa-solid fa-arrow-left header-icon" onclick="goBack()"></i>
+                <div class="header-title">Clean Code</div>
+                <div style="display: flex; gap: 16px; font-size: 20px;">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+
+            <div class="detail-hero">
+                <img src="https://source.unsplash.com/random/300x450/?space,book" alt="Clean Code" class="detail-cover">
+                <div class="detail-info">
+                    <div class="detail-type">LIVRO</div>
+                    <h2>Clean Code</h2>
+                    <p>A Handbook of Agile Software Craftsmanship</p>
+                    <a href="#" class="detail-author" style="text-decoration: none; display: block;">Robert C.
+                        Martin</a>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span style="color: var(--text); font-weight: 500;">4.8</span>
+                        <span>• 126 avaliações</span>
+                    </div>
+
+                    <div class="detail-tags">
+                        <span class="d-tag d-tag-green"><i class="fa-solid fa-circle-check"></i> Disponível na
+                            biblioteca</span>
+                        <span class="d-tag"><i class="fa-regular fa-clock"></i> Bibliografia básica</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-info">
+                <div class="tech-item">
+                    <i class="fa-solid fa-book-open"></i>
+                    <div class="tech-text">
+                        <h5>Tipo</h5>
+                        <p>Livro</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <div class="tech-text">
+                        <h5>Ano</h5>
+                        <p>2008</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="tech-text">
+                        <h5>Idioma</h5>
+                        <p>Inglês</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-grid">
+                <button class="action-btn btn-blue">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <span>Ler online</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Baixar PDF</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fa-regular fa-star"></i>
+                    <span>Favoritar</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span>Compartilhar</span>
+                </button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active">Sobre</div>
+                <div class="tab">Arquivos (3)</div>
+                <div class="tab">Informações</div>
+                <div class="tab">Comentários (12)</div>
+            </div>
+
+            <div class="tab-content">
+                <p>Clean Code é um guia para desenvolvimento de software profissional. O autor apresenta princípios e
+                    práticas para escrever códigos limpos, legíveis e fáceis de manter.</p>
+                <span class="read-more">Ver mais <i class="fa-solid fa-chevron-down"
+                        style="font-size: 12px;"></i></span>
+            </div>
+
+            <div class="section-header" style="margin-top: 32px;">
+                <h2>Materiais relacionados</h2>
+                <a href="#" class="see-all">Ver todos</a>
+            </div>
+
+            <div class="related-list">
+                <div class="related-item">
+                    <div class="ri-icon ri-video"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="ri-info">
+                        <h4>Clean Code - Conceitos Principais</h4>
+                        <p><span>Vídeo</span> • Professor Gilton José</p>
+                        <p style="margin-top: 4px;"><i class="fa-regular fa-clock"></i> 45 min</p>
+                    </div>
+                    <div class="ri-action"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+                <div class="related-item">
+                    <div class="ri-icon ri-pdf"><i class="fa-regular fa-file-lines"></i></div>
+                    <div class="ri-info">
+                        <h4>Resumo - Clean Code</h4>
+                        <p><span>PDF</span> • Programação Imperativa</p>
+                        <p style="margin-top: 4px;">1.2 MB</p>
+                    </div>
+                    <div class="ri-action"><i class="fa-solid fa-bookmark"></i></div>
+                </div>
+                <div class="related-item">
+                    <div class="ri-icon ri-book"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="ri-info">
+                        <h4>Refatoração - Capítulo 2</h4>
+                        <p><span>Livro</span> • Martin Fowler</p>
+                    </div>
+                    <div class="ri-action"><i class="fa-regular fa-bookmark"></i></div>
+                </div>
+            </div>
         </div>
 
-        <div class="tab-content">
-            <p>Clean Code é um guia para desenvolvimento de software profissional. O autor apresenta princípios e práticas para escrever códigos limpos, legíveis e fáceis de manter.</p>
-            <span class="read-more">Ver mais <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i></span>
+
+        <!-- ================= BOTTOM NAV ================= -->
+        <div class="bottom-nav">
+            <div class="nav-item active" onclick="navigate('inicio', this)">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </div>
+            <div class="nav-item" onclick="navigate('buscar', this)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Buscar</span>
+            </div>
+            <div class="nav-item" onclick="navigate('biblioteca', this)">
+                <i class="fa-solid fa-book"></i>
+                <span>Biblioteca</span>
+            </div>
+            <div class="nav-item" onclick="navigate('upload', this)">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <span>Upload</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-user"></i>
+                <span>Perfil</span>
+            </div>
         </div>
 
-        <div class="section-header" style="margin-top: 32px;">
-            <h2>Materiais relacionados</h2>
-            <a href="#" class="see-all">Ver todos</a>
-        </div>
-        
-        <div class="related-list">
-            <div class="related-item">
-                <div class="ri-icon ri-video"><i class="fa-regular fa-circle-play"></i></div>
-                <div class="ri-info">
-                    <h4>Clean Code - Conceitos Principais</h4>
-                    <p><span>Vídeo</span> • Professor Gilton José</p>
-                    <p style="margin-top: 4px;"><i class="fa-regular fa-clock"></i> 45 min</p>
-                </div>
-                <div class="ri-action"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-            <div class="related-item">
-                <div class="ri-icon ri-pdf"><i class="fa-regular fa-file-lines"></i></div>
-                <div class="ri-info">
-                    <h4>Resumo - Clean Code</h4>
-                    <p><span>PDF</span> • Programação Imperativa</p>
-                    <p style="margin-top: 4px;">1.2 MB</p>
-                </div>
-                <div class="ri-action"><i class="fa-solid fa-bookmark"></i></div>
-            </div>
-            <div class="related-item">
-                <div class="ri-icon ri-book"><i class="fa-solid fa-book-open"></i></div>
-                <div class="ri-info">
-                    <h4>Refatoração - Capítulo 2</h4>
-                    <p><span>Livro</span> • Martin Fowler</p>
-                </div>
-                <div class="ri-action"><i class="fa-regular fa-bookmark"></i></div>
-            </div>
-        </div>
     </div>
 
+    <script>
+        let historyStack = ['inicio'];
 
-    <!-- ================= BOTTOM NAV ================= -->
-    <div class="bottom-nav">
-        <div class="nav-item active" onclick="navigate('inicio', this)">
-            <i class="fa-solid fa-house"></i>
-            <span>Início</span>
-        </div>
-        <div class="nav-item" onclick="navigate('buscar', this)">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Buscar</span>
-        </div>
-        <div class="nav-item" onclick="navigate('biblioteca', this)">
-            <i class="fa-solid fa-book"></i>
-            <span>Biblioteca</span>
-        </div>
-        <div class="nav-item" onclick="navigate('upload', this)">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            <span>Upload</span>
-        </div>
-        <div class="nav-item">
-            <i class="fa-regular fa-user"></i>
-            <span>Perfil</span>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    let historyStack = ['inicio'];
-
-    function navigate(screenId, navElement = null) {
-        if (navElement) {
-            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-            navElement.classList.add('active');
-        } else {
-            const iconsMap = {
-                'inicio': 0,
-                'buscar': 1,
-                'biblioteca': 2,
-                'upload': 3
-            };
-            const index = iconsMap[screenId];
-            if (index !== undefined) {
+        function navigate(screenId, navElement = null) {
+            if (navElement) {
                 document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-                document.querySelectorAll('.nav-item')[index].classList.add('active');
+                navElement.classList.add('active');
+            } else {
+                const iconsMap = {
+                    'inicio': 0,
+                    'buscar': 1,
+                    'biblioteca': 2,
+                    'upload': 3
+                };
+                const index = iconsMap[screenId];
+                if (index !== undefined) {
+                    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+                    document.querySelectorAll('.nav-item')[index].classList.add('active');
+                }
             }
-        }
 
-        document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
-        
-        document.getElementById(screenId).classList.add('active');
-        
-        document.getElementById(screenId).scrollTop = 0;
-
-        if (historyStack[historyStack.length - 1] !== screenId) {
-            historyStack.push(screenId);
-        }
-    }
-
-    function openBookDetails() {
-        document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
-        document.getElementById('detalhes').classList.add('active');
-        document.getElementById('detalhes').scrollTop = 0;
-        
-        if (historyStack[historyStack.length - 1] !== 'detalhes') {
-            historyStack.push('detalhes');
-        }
-    }
-
-    function goBack() {
-        if (historyStack.length > 1) {
-            historyStack.pop();
-            const prevScreen = historyStack[historyStack.length - 1];
-            
             document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
-            document.getElementById(prevScreen).classList.add('active');
-            
-            const iconsMap = {
-                'inicio': 0,
-                'buscar': 1,
-                'biblioteca': 2,
-                'upload': 3
-            };
-            const index = iconsMap[prevScreen];
-            if (index !== undefined) {
-                document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-                document.querySelectorAll('.nav-item')[index].classList.add('active');
+
+            document.getElementById(screenId).classList.add('active');
+
+            document.getElementById(screenId).scrollTop = 0;
+
+            if (historyStack[historyStack.length - 1] !== screenId) {
+                historyStack.push(screenId);
             }
         }
-    }
-</script>
+
+        function openBookDetails() {
+            document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
+            document.getElementById('detalhes').classList.add('active');
+            document.getElementById('detalhes').scrollTop = 0;
+
+            if (historyStack[historyStack.length - 1] !== 'detalhes') {
+                historyStack.push('detalhes');
+            }
+        }
+
+        function goBack() {
+            if (historyStack.length > 1) {
+                historyStack.pop();
+                const prevScreen = historyStack[historyStack.length - 1];
+
+                document.querySelectorAll('.screen').forEach(el => el.classList.remove('active'));
+                document.getElementById(prevScreen).classList.add('active');
+
+                const iconsMap = {
+                    'inicio': 0,
+                    'buscar': 1,
+                    'biblioteca': 2,
+                    'upload': 3
+                };
+                const index = iconsMap[prevScreen];
+                if (index !== undefined) {
+                    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+                    document.querySelectorAll('.nav-item')[index].classList.add('active');
+                }
+            }
+        }
+    </script>
 
 </body>
+
 </html>
